@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700:800:900@display=swap">
 
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
@@ -196,10 +199,10 @@
       </div>
     </section>
 
-    <section class="container testimonials__container">
+    <section class="container testimonials__container swiper mySwiper">
       <h2>Students Testimonials</h2>
-      <div>
-        <article class="testimonial">
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/avatar1.jpg">
           </div>
@@ -211,7 +214,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/avatar2.jpg">
           </div>
@@ -223,7 +226,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/avatar3.jpg">
           </div>
@@ -235,7 +238,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
           </div>
         </article>
-        <article class="testimonial">
+        <article class="testimonial swiper-slide">
           <div class="avatar">
             <img src="./images/avatar4.jpg">
           </div>
@@ -246,22 +249,34 @@
           <div class="testimonial__body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
           </div>
-          <article class="testimonial">
-            <div class="avatar">
-              <img src="./images/avatar5.jpg">
-            </div>
-            <div class="testimonial__info">
-              <h5>Juan Diaz</h5>
-              <small>Student</small>
-            </div>
-            <div class="testimonial__body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
-            </div>
-          </article>
         </article>
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar5.jpg">
+          </div>
+          <div class="testimonial__info">
+            <h5>Juana Diaz</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas animi minima. Aut obcaecati praesentium eius quas ipsum sit, hic rem est eaque cumque minus eligendi quidem provident laboriosam vitae.</p>
+          </div>
+        </article>  
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
