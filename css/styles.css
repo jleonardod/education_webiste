@@ -377,7 +377,7 @@ section h2 {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 50%;
+  left: 46%;
   top: -1.5rem;
   transform: rotate(45deg);
 }
@@ -448,16 +448,6 @@ footer ul li:hover {
   h4 {
     font-size: 1.2rem;
   }
-
-  /*.categories {
-    height: 35rem;
-    margin-bottom: 5rem;
-  }
-
-  .courses {
-    margin-top: 13rem;
-    padding-bottom: 4rem;
-  }*/
 
   /* ====================== NAVBAR ====================== */
 
@@ -656,5 +646,9 @@ footer ul li:hover {
 
   .footer__socials {
     justify-content: center;
+  }
+
+  .testimonial__body::before{
+    left: 35%;
   }
 }
